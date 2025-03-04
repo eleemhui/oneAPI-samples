@@ -5,8 +5,9 @@ description = "This code sample will train a DistilBERT model while using Intel 
 authors = [
     {name = "Copyright © 2020 Intel Corporation"}
 ]
+license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "absl-py>=1.4.0",
     "astunparse>=1.6.3",
@@ -27,6 +28,11 @@ dependencies = [
     "tf-estimator-nightly>=2.16.0.dev2024012409",
     "tokenizers>=0.21.0",
     "transformers>=4.49.0",
+]
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
 ]
 [[tool.uv.index]]
 url = "https://software.repos.intel.com/python/pypi"

@@ -12,15 +12,14 @@
       "linux": [
       {
           "env": [
-              "pip install uv",
+              "pip install uv==0.6.3",
               "uv sync"
           ],
           "id": "intel amx bf16 inference",
           "steps": [
-              "uv run Intel_TensorFlow_AMX_BF16_Inference.py -m eager",
-              "echo 'I am not sure how to convert the rest to uv. -Edmund'",
-              "uv run python -m ipykernel install --user --name=tensorflow",
-              "uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --ExecutePreprocessor.kernel_name=tensorflow --to notebook IntelTensorFlow_AMX_BF16_Inference.ipynb"
+              "uv run Intel_TensorFlow_AMX_BF16_Inference.py",
+              "uv run python -m ipykernel install --user --name=tf_amx_inference",
+              "uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --ExecutePreprocessor.kernel_name=tf_amx_inference --to notebook IntelTensorFlow_AMX_BF16_Inference.ipynb"
            ]
       }
        ]

@@ -11,7 +11,7 @@
   "ciTests": {
     "linux": [{
       "env": [
-          "pip install uv",
+          "pip install uv==0.6.3",
           "uv sync"
       ],
       "id": "intel amx bf16 training",
