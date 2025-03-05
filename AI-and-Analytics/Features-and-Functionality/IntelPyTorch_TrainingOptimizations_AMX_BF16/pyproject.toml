@@ -1,7 +1,11 @@
 [project]
 name = "intelpytorch-trainingoptimizations-amx-bf16"
 version = "0.1.0"
-description = "Add your description here"
+description = "This sample illustrates how to train a PyTorch model using Advanced Matrix Extensions Bfloat16"
+authors = [
+    {name = "Copyright © 2020 Intel Corporation"}
+]
+license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

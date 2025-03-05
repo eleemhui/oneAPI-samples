@@ -1,7 +1,11 @@
 [project]
 name = "intelpython-numpy-numba-dpnp-knn"
 version = "0.1.0"
-description = "Add your description here"
+description = "This sample shows how to achieve the same accuracy of the k-NN model classification while using numpy, numba and dpnp."
+authors = [
+    {name = "Copyright © 2020 Intel Corporation"}
+]
+license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

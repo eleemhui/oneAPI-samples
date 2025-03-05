@@ -12,7 +12,7 @@
   	"linux": [
     {
   		"env": [
-        "pip install uv",
+        "pip install uv==0.6.3",
         "uv venv tensorflow"
       ],
   		"id": "Transformer_AMX_bfloat16_Mixed_Precision_Learning",

@@ -1,7 +1,11 @@
 [project]
 name = "intelpython-xgboost-performance"
 version = "0.1.0"
-description = "Add your description here"
+description = "This sample code illustrates how to analyze the performance benefit from using Intel training optimizations upstreamed by Intel to latest XGBoost compared to un-optimized XGBoost 0.81 "
+authors = [
+    {name = "Copyright © 2020 Intel Corporation"}
+]
+license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
