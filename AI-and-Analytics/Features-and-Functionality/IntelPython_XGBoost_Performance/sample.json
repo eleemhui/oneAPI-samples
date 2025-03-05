@@ -13,6 +13,7 @@
     {
   		"id": "idp_xgb_performance",
   		"steps": [
+          "pip install uv",
          	"uv venv",
           "uv add xgboost==2.1.1",
           "uv sync",
