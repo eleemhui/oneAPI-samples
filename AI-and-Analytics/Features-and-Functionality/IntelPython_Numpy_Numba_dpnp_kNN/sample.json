@@ -12,6 +12,7 @@
   	"linux": [
     {
   		"env": [
+        "pip install uv",
         "uv venv",  
         "uv sync",
         "source /opt/intel/oneapi/setvars.sh"

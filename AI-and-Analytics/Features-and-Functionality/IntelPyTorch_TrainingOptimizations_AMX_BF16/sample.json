@@ -13,6 +13,7 @@
       {
           "id": "intel amx bf16 training",
           "steps": [
+              "pip install uv",
               "uv venv",
               "uv sync",
               "uv run python -m ipykernel install --user --name=pytorch",
