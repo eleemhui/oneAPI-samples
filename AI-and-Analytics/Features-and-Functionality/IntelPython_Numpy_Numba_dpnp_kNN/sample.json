@@ -19,7 +19,9 @@
       ],
   		"id": "idp_numpy_numba_dpnp_gs_py",
   		"steps": [
-         "python IntelPython_Numpy_Numba_dpnp_kNN.py" 
+         "uv run IntelPython_Numpy_Numba_dpnp_kNN.py", 
+         "uv run python -m ipykernel install --user --name=numpy_numba_dpnp_gs_py",
+         "uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --ExecutePreprocessor.kernel_name=numpy_numba_dpnp_gs_py --to notebook IntelPython_Numpy_Numba_dpnp_kNN.ipynb"
   		 ]
   	}
     ]
