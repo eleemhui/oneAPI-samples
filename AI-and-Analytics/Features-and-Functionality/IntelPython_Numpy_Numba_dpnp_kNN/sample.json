@@ -12,9 +12,9 @@
   	"linux": [
     {
   		"env": [
-        "source /intel/oneapi/intelpython/bin/activate",
-        "conda activate base", 
-        "pip install numba"
+        "uv venv",  
+        "uv sync",
+        "source /opt/intel/oneapi/setvars.sh"
       ],
   		"id": "idp_numpy_numba_dpnp_gs_py",
   		"steps": [
