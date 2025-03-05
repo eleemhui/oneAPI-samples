@@ -1,7 +1,7 @@
 [project]
 name = "inteltensorflow-amx-bf16-inference"
 version = "0.1.0"
-description = "Add your description here"
+description = "This sample illustrates how to inference a TensorFlow model using Advanced Matrix Extensions Bfloat16"
 authors = [
     {name = "Copyright © 2020 Intel Corporation"}
 ]

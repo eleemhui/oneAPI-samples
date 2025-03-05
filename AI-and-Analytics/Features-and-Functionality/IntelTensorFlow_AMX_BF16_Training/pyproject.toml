@@ -1,7 +1,7 @@
 [project]
 name = "inteltensorflow-amx-bf16-training"
 version = "0.1.0"
-description = "This code sample will train a DistilBERT model while using Intel Optimized TensorFlow. The model will be trained using FP32 and BF16 precision, including the use of Intel(R) Advanced Matrix Extensions (Intel® AMX) on BF16. Intel® AMX is supported on BF16 data type starting with the 4th Generation of Xeon Scalable Processors. The training time will be compared, showcasing the speedup of Intel® AMX."
+description = "This sample illustrates how to train a TensorFlow model using Advanced Matrix Extensions Bfloat16"
 authors = [
     {name = "Copyright © 2020 Intel Corporation"}
 ]
