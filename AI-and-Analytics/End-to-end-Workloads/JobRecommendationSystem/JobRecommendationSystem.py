@@ -26,6 +26,7 @@ from datasets import load_dataset
 dataset = load_dataset("victor/real-or-fake-fake-jobposting-prediction")
 dataset = dataset['train']
 
+
 # %% [markdown]
 # To better analyze and understand the data we are transferring it to pandas DataFrame, so we are able to take benefit from all pandas data transformations. Pandas library provides multiple useful functions for data manipulation so it is usual choice at this stage of machine learning or deep learning project.
 # 
@@ -476,6 +477,7 @@ model_itex.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accur
 print(model_itex.summary())
 
 # %%
+import numpy as np
 X_final = np.array(embedded_docs)
 y_final = np.array(y)
 
@@ -578,7 +580,6 @@ messages = [
 # Now, we are preparing functions to show similarities between given sentences in the for of heat map. 
 
 # %%
-import numpy as np
 import seaborn as sns
 
 def plot_similarity(labels, features, rotation):
