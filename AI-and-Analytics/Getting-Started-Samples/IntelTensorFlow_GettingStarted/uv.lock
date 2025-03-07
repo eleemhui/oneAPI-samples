@@ -378,6 +378,25 @@ wheels = [
 ]
 
 [[package]]
+name = "inteltensorflow-gettingstarted"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "intel-extension-for-tensorflow", extra = ["cpu"] },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "intel-extension-for-tensorflow", extras = ["cpu"], specifier = "==2.15" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
+
+[[package]]
 name = "ipykernel"
 version = "6.29.5"
 source = { registry = "https://pypi.org/simple" }
@@ -1034,25 +1053,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/37/72/88311445fd44c455c
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl", hash = "sha256:37b17b5fc1e604945c2642c872a3764b5d547a48009871aea3edd3afa180afb8", size = 7755 },
 ]
-
-[[package]]
-name = "tnteltensorflow-gettingstarted"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "intel-extension-for-tensorflow", extra = ["cpu"] },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-]
-
-[package.metadata]
-requires-dist = [{ name = "intel-extension-for-tensorflow", extras = ["cpu"], specifier = "==2.15" }]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
 
 [[package]]
 name = "tornado"
