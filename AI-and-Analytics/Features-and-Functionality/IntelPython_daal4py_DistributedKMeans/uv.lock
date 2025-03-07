@@ -430,7 +430,7 @@ dev = [
 requires-dist = [
     { name = "daal4py", specifier = ">=2024.7.0" },
     { name = "joblib", specifier = ">=1.4.2" },
-    { name = "mpi4py", specifier = "==3.1.4" },
+    { name = "mpi4py", specifier = ">=4.0.3" },
     { name = "notebook", specifier = ">=7.3.2" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
@@ -889,12 +889,13 @@ wheels = [
 
 [[package]]
 name = "mpi4py"
-version = "3.1.4"
+version = "4.0.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/bc/f2/749af7fd0e7703ddca6cea525ab40f26c3ca6cbe6c23658441c6f9705860/mpi4py-3.1.4.tar.gz", hash = "sha256:17858f2ebc623220d0120d1fa8d428d033dde749c4bc35b33d81a66ad7f93480", size = 2493282 }
+sdist = { url = "https://files.pythonhosted.org/packages/0d/b6/833caa35145efa52c698c50bc76dd9cd2d30527193a9b54004a76c9d99b4/mpi4py-4.0.3.tar.gz", hash = "sha256:de2710d73e25e115865a3ab63d34a54b2d8608b724f761c567b6ad58dd475609", size = 466338 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/02/9b/4f3ce5d2f319d4e5bd5637c883039d0c96cb238d9fab7e13532d1c8bc13e/mpi4py-3.1.4-cp311-cp311-win32.whl", hash = "sha256:f37859af5a318d1af07d3b51714fd36b7674e7368191578cfd96165136279f2d", size = 393344 },
-    { url = "https://files.pythonhosted.org/packages/b9/31/e80c1fb71fac3203ab54c4115211cbec2b9d8575df895b202abaee9a65a1/mpi4py-3.1.4-cp311-cp311-win_amd64.whl", hash = "sha256:5785eecf65669fa97e258d087a86e5b2c5e4dd2b5140e9aee14917cadfe3c876", size = 464514 },
+    { url = "https://files.pythonhosted.org/packages/d7/3e/6b26012cc62a29b294fbce135fb0a107a00af05e69cfd69ee23546d5c073/mpi4py-4.0.3-cp311-cp311-win_amd64.whl", hash = "sha256:26d9e70081f3c69c74c81306b6ad33918b710980bd1732ab577702909b2db3e8", size = 1597891 },
+    { url = "https://files.pythonhosted.org/packages/6d/1e/d5be898722f74faf0b19c60ed3783b6b59bf0f1056f6d0cdc65ccae6ab8f/mpi4py-4.0.3-cp312-cp312-win_amd64.whl", hash = "sha256:b709c410ab5f3f3f12f44514a18fb392e49b9e3185acb11e0dd8557a4ad1fe40", size = 1725596 },
+    { url = "https://files.pythonhosted.org/packages/03/d3/b7cfecd793597b18d81dba63a5d9a1ff022a36417be7dead7b5565cd8fc9/mpi4py-4.0.3-cp313-cp313-win_amd64.whl", hash = "sha256:7b026914b498dd40a28eb1d78494f266446f22894c0e91500f5f035daefb3fda", size = 1724108 },
 ]
 
 [[package]]

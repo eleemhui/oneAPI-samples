@@ -14,10 +14,8 @@
 		"linux": [{
 			"env": [
 				"uv venv",
-				"uv add mpi4py==3.1.4",
 				"uv sync",
-				"source /opt/intel/oneapi/setvars.sh",
-				"uv add -r requirements.txt"
+				"source /opt/intel/oneapi/setvars.sh"
 			],
 			"id": "idp_d4p_KM_Dist",
 			"steps": [
