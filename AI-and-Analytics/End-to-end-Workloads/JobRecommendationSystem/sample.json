@@ -12,10 +12,10 @@
   	"linux": [
       {
         "env": [
-				  "pip install uv==0.6.3",
-				  "uv sync",
-				  "uv run python -m ipykernel install --user --name=JobRecommendationSystem_py"
-			  ],
+          "pip install uv==0.6.3",
+          "uv sync",
+          "uv run python -m ipykernel install --user --name=JobRecommendationSystem_py"
+        ],
         "id": "JobRecommendationSystem_py",
         "steps": [
           "uv run spacy download en_core_web_sm",
