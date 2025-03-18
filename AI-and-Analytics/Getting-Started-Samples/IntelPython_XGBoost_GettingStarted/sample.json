@@ -18,7 +18,8 @@
 			],
 			"id": "IDP_XGBoost_GS_py",
 			"steps": [
-				"uv run IntelPython_XGBoost_GettingStarted.py"			]
+				"uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --to notebook IntelPython_XGBoost_GettingStarted.ipynb"
+			]
 		}]
 	},
 	"expertise": "Getting Started"
