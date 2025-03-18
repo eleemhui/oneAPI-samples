@@ -14,13 +14,12 @@
 		"linux": [{
 			"env": [
 				"pip install uv==0.6.3",
-				"uv sync",
-				"uv run python -m ipykernel install --user --name=idp_d4p_GS_py"
+				"uv sync"
 			],
 			"id": "idp_d4p_GS_py",
 			"steps": [
 				"uv run IntelPython_daal4py_GettingStarted.py",
-				"uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --ExecutePreprocessor.kernel_name=idp_d4p_GS_py --to notebook IntelPython_daal4py_GettingStarted.ipynb"
+				"uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --to notebook IntelPython_daal4py_GettingStarted.ipynb"
 			]
 		}]
 	},
