@@ -13,13 +13,14 @@
 	"ciTests": {
 		"linux": [{
 			"env": [
-				"uv venv",
-				"uv sync",
-				"source /opt/intel/oneapi/setvars.sh"
+				"pip install uv==0.6.3",
+				"source /opt/intel/oneapi/setvars.sh",
+				"uv sync"				
 			],
 			"id": "idp_d4p_KM_Dist",
 			"steps": [
-				"uv run mpirun -n 4 python ./IntelPython_daal4py_Distributed_Kmeans.py"
+				"uv run mpirun -n 4 python ./IntelPython_daal4py_Distributed_Kmeans.py",
+				"uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --to notebook IntelPython_daal4py_Distributed_Kmeans.ipynb"
 			]
 		}]
 	},

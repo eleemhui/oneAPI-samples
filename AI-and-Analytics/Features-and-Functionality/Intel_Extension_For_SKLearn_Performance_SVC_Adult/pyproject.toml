@@ -16,6 +16,11 @@ dependencies = [
     "scikit-learn-intelex>=2025.2.0,<2026.0.0",
 ]
 
+[dependency-groups]
+dev = [
+    "jupyter"
+]
+
 [project.scripts]
 python-validate = "Intel_Extension_for_SKLearn_Performance_SVC_Adult:main"
 
