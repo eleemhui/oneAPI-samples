@@ -3,7 +3,7 @@ name = "intelpython-xgboost-daal4pyprediction"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11, <=3.12"
 dependencies = [
     "daal4py>=2024.7.0",
     "ipykernel>=6.29.5",
@@ -11,5 +11,11 @@ dependencies = [
     "matplotlib>=3.10.1",
     "pandas>=2.2.3",
     "scikit-learn>=1.6.1",
-    "xgboost>=2.1.4",
+    "xgboost-cpu>=3.0.0",
 ]
+[dependency-groups]
+dev = [
+    "jupyter"
+]
+[[tool.uv.index]]
+url = "https://pytorch-extension.intel.com/release-whl/stable/cpu/cn/"
