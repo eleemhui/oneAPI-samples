@@ -11,12 +11,13 @@
     "linux": [
       {
         "env": [
-          "pip install uv",
+          "pip install uv==0.6.3",
           "uv sync"
         ],
         "id": "skelarnex_svc",
         "steps": [
-          "uv run Intel_Extension_for_SKLearn_Performance_SVC_Adult.py"
+          "uv run Intel_Extension_for_SKLearn_Performance_SVC_Adult.py",
+          "uv run jupyter nbconvert --ExecutePreprocessor.enabled=True --to notebook Intel_Extension_for_SKLearn_Performance_SVC_Adult.ipynb"
         ]
       }
     ]
