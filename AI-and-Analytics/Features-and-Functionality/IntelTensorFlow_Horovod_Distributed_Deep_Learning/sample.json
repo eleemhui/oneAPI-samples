@@ -17,7 +17,7 @@
             ],
             "id": "distributed_learning_tensorflow_horovod_py",
             "steps": [
-                "uv run --active jupyter nbconvert --to notebook --execute tensorflow_with_horovod.ipynb"
+                "uv run jupyter nbconvert --to notebook --execute tensorflow_with_horovod.ipynb"
              ]
         }
       ]
